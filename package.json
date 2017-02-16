@@ -1,0 +1,40 @@
+{
+  "name": "todo",
+  "version": "0.1.0",
+  "description": "Sample todo app with nodejs/expressjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "keywords": [
+    "todo",
+    "node",
+    "express",
+    "javascript"
+  ],
+  "author": "Jean Pierre Barcia",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "change-case": "^3.0.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.1",
+    "jsonwebtoken": "^7.3.0",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.22",
+    "mongoose": "^4.8.2",
+    "morgan": "^1.8.1",
+    "nconf": "^0.8.4",
+    "require-dir": "^0.3.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-nodemon": "^2.2.1",
+    "jshint": "^2.9.4",
+    "node-notifier": "^5.0.2",
+    "nodemon": "^1.11.0"
+  }
+}
