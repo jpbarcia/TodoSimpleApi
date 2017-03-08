@@ -44,16 +44,16 @@ module.exports = function(app) {
             await registeredUser.save();
 
             let newAccessToken = jwt.sign({
-                id: userFound.id,
-                user: userFound.user
+                id: registeredUser.id,
+                user: registeredUser.user
             }, Secret, { expiresIn: 60 * 15 });
             return res.json({ message: {
-                user: userFound.user,
+                user: registeredUser.user,
                 refreshToken: jwt.sign({
-                    id: userFound.id,
-                    user: userFound.user,
+                    id: registeredUser.id,
+                    user: registeredUser.user,
                     accessToken: newAccessToken
-                }, userFound.key, { expiresIn: 60 * 60 * 12 }),
+                }, registeredUser.key, { expiresIn: 60 * 60 * 12 }),
                 accessToken: newAccessToken
             }});
         });

@@ -22,7 +22,7 @@ module.exports = function(req, res, next) {
     }
 
     if(!token)
-        return next({status: 401, message: "Not Authorized"});
+        return next({status: 401, message: "Not Authorized"});@
 
     let decoded;
     try {
